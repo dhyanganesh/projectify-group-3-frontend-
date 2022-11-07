@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body
+{
+ min-height: 1000px;
+}
+ 
+
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg1.jpg);
+    background-size: cover;
+}
+
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2
+{
+  font-size: 5em;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  
+  
+}
+
+.banner .content h2:hover
+{
+    transform: translateY(-34px);
+    font-size: 3.5em;
+}
+ 
+.btn
+{
+    font-size: 1em ;
+    color: #fff;
+    background: #45f3ff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .navigation li a
+{
+    color: #111;
+}
+
+header .navigation li a:hover
+{
+    color: #45f3ff;
+}
+
+section
+{
+    padding: 100px;
+}
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50
+{
+    position: relative;
+    width: 48%;
+}
+
+.tittleText
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+
+}
+
+.title 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.tittleText span
+{
+    color: #45f3ff;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
