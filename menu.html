@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Menu page</title>
+        <link rel="stylesheet" href="home.css">
+
+    </head>
+  <body>
+    <header>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#trade">Trade</a></li>
+            <li><a href="#account">Account</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>
+                Stock Simulator
+            </h2>
+            <a href="login.html" class="btn">Login</a>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="row">
+            <div class="col50">
+                <h2 class="tittleText"><span>P</span>ortfolio</h2>
+                <h5 class="btn">Overview</h5>
+                <h5 class="btn">Performance</h5>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="trade" id="trade">
+        <div class="title">  
+         <h2 class="tittleText"><span>T</span>rade</h2>
+         <div class="opt">
+            <h4 class="btn">Stocks</h4>
+            <h4 class="btn">Order status</h4>
+         </div>
+         
+        </div>
+
+    </section>
+
+
+    <section class="account" id="account">
+        <div class="row">
+            <div class="col50">
+                <h2 class="tittleText"><span>A</span>ccount</h2>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY >0);
+        })
+    </script>
+  </body>
+    
+
+</html>
+
+
+
